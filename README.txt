@@ -21,15 +21,6 @@ Shark Bay is highly vulnerable to climate change, yet its fish biodiversity has 
 - **Remote sensing** to derive high-resolution environmental variables (e.g., salinity, depth, seagrass cover).
 - **Machine learning** to model and extrapolate fish biodiversity patterns across 560 km².
 
-**Key Findings:**
-
-- 1067 fish species detected from 132 genera and 71 families.
-- Biodiversity hotspots correspond to salinity gradients, seagrass density, and bathymetry.
-- Detection of tropical species suggests climate-driven poleward shifts.
-- Five distinct fish communities (A–E) were identified.
-
-This framework offers a scalable, non-invasive approach for biodiversity monitoring in dynamic marine environments.
-
 ---
 
 ## 📁 Repository Structure
