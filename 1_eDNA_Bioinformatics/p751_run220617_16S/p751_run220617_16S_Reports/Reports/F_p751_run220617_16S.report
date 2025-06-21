@@ -1,0 +1,71 @@
+================================================================================
+Taxonomic Assignment-Predictions with SINTAX
+--------------------------------------------------------------------------------
+Project: p751
+Run    : run220617
+Group  : 16S
+--------------------------------------------------------------------------------
+Application   : SINTAX (v11.0.667_i86linux64)
+Reference Name: NCBI Based 16S - BonyFish / CartilaginousFish / Hapfish / Lamprey / Lungfish / Turtle / PLUS
+Reference File: p751_run210429_16S_BestBlastUnique_Plus_Sintax.fa
+Tax Filter    : 0.75
+================================================================================
+Tax-Prediction Workflow Summary:
+ (F1) Prepare Reference
+ (F2) Assign Taxa with SINTAX
+ (F3) Reformat Tax-Information
+ (F4) Combine Count-Table and Taxa for Phyloseq Import
+ (F5) Tax-Assignment Report for Phylum Level
+ (F6) Additional Chimera Check (Not Needed)
+--------------------------------------------------------------------------------
+START_Tax-Prediction: 00:07:42 29/06/2022
+ Start_F1_Restrict_Reference: 00:07:42 29/06/2022
+  ‣Number of Reference Sequences:  987
+  ‣OTU related References:         980
+  ‣ZOTU related References:        980
+ End_F1_Restrict_Reference: 00:07:43 29/06/2022
+--------------------------------------------------------------------------------
+ Start_F1_Unique_Records: 00:07:43 29/06/2022
+  ‣OTU: N(seq)= 980 / N(uniques)= 266 / N(singletons)= 145 (54.5%)
+  ‣OTU: Min size 1 / median 1 / max 111 / avg 3.68
+  ‣ZOTU: N(seq)= 980 / N(uniques)= 266 / N(singletons)= 145 (54.5%)
+  ‣ZOTU: Min size 1 / median 1 / max 111 / avg 3.68
+ End_F1_Unique_Records: 00:07:43 29/06/2022
+--------------------------------------------------------------------------------
+ Start_F1_Build_UPD_Reference: 00:07:43 29/06/2022
+ End_F1_Build_UPD_Reference: 00:07:43 29/06/2022
+--------------------------------------------------------------------------------
+ Start_F2_Tax-Assignment: 00:07:43 29/06/2022
+ End_F2_Tax-Assignment: 00:07:44 29/06/2022
+--------------------------------------------------------------------------------
+ Start_F3_Re-Format: 00:07:44 29/06/2022
+ End_F3_Re-Format: 00:07:44 29/06/2022
+--------------------------------------------------------------------------------
+ Start_F4_Combine_CountTable_TaxLabel: 00:07:44 29/06/2022
+ End_F4_Combine_CountTable_TaxLabel: 00:07:44 29/06/2022
+--------------------------------------------------------------------------------
+ Start_F5_Tax-Summary: 00:07:44 29/06/2022
+  Tax Summary for OTU:
+   Chordata	360	100.0	100.0
+  Tax Summary for ZOTU:
+   Chordata	454	100.0	100.0
+ End_F5_Tax-Summary: 00:07:44 29/06/2022
+--------------------------------------------------------------------------------
+ Start_F6_Chimera-Check: 00:07:44 29/06/2022
+  Additional Chimera-Check
+  Note: Although the high_confidence mode is used for chimera detection,
+        this is an extra step with a high risk of false positives.
+        There is already a sufficient built-in de novo chimera filtering
+        as part of the UPARSE or UNOISE workflow. This extra step might
+        be useful if applied with caution.
+  For details see -> e_OTU/p751_run220617_16S_(Z)OTU_chimera.txt
+................................................................................
+  Chimera-Check for OTU: 91
+  Chimera-Check for ZOTU: 80
+  Chimera-Check for ZOTU_c99: 68
+  Chimera-Check for ZOTU_c98: 63
+  Chimera-Check for ZOTU_c97: 60
+ End_F6_Chimera-Check: 00:07:48 29/06/2022
+--------------------------------------------------------------------------------
+END_Tax-Prediction: 00:07:48 29/06/2022
+================================================================================

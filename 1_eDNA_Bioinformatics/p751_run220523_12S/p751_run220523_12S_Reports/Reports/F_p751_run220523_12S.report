@@ -1,0 +1,71 @@
+================================================================================
+Taxonomic Assignment-Predictions with SINTAX
+--------------------------------------------------------------------------------
+Project: p751
+Run    : run220523
+Group  : 12S
+--------------------------------------------------------------------------------
+Application   : SINTAX (v11.0.667_i86linux64)
+Reference Name: MIDORI srRNA GB248
+Reference File: MIDORI_UNIQ_NUC_GB248_srRNA_SINTAX.fasta
+Tax Filter    : 0.75
+================================================================================
+Tax-Prediction Workflow Summary:
+ (F1) Prepare Reference
+ (F2) Assign Taxa with SINTAX
+ (F3) Reformat Tax-Information
+ (F4) Combine Count-Table and Taxa for Phyloseq Import
+ (F5) Tax-Assignment Report for Phylum Level
+ (F6) Additional Chimera Check (Not Needed)
+--------------------------------------------------------------------------------
+START_Tax-Prediction: 13:06:01 03/06/2022
+ Start_F1_Restrict_Reference: 13:06:02 03/06/2022
+  ‣Number of Reference Sequences:  148845
+  ‣OTU related References:         30491
+  ‣ZOTU related References:        30795
+ End_F1_Restrict_Reference: 13:11:45 03/06/2022
+--------------------------------------------------------------------------------
+ Start_F1_Unique_Records: 13:11:45 03/06/2022
+  ‣OTU: N(seq)= 30491 / N(uniques)= 18529 / N(singletons)= 13738 (74.1%)
+  ‣OTU: Min size 1 / median 1 / max 993 / avg 1.65
+  ‣ZOTU: N(seq)= 30795 / N(uniques)= 18698 / N(singletons)= 13862 (74.1%)
+  ‣ZOTU: Min size 1 / median 1 / max 993 / avg 1.65
+ End_F1_Unique_Records: 13:11:46 03/06/2022
+--------------------------------------------------------------------------------
+ Start_F1_Build_UPD_Reference: 13:11:46 03/06/2022
+ End_F1_Build_UPD_Reference: 13:11:46 03/06/2022
+--------------------------------------------------------------------------------
+ Start_F2_Tax-Assignment: 13:11:46 03/06/2022
+ End_F2_Tax-Assignment: 13:11:56 03/06/2022
+--------------------------------------------------------------------------------
+ Start_F3_Re-Format: 13:11:56 03/06/2022
+ End_F3_Re-Format: 13:11:56 03/06/2022
+--------------------------------------------------------------------------------
+ Start_F4_Combine_CountTable_TaxLabel: 13:11:56 03/06/2022
+ End_F4_Combine_CountTable_TaxLabel: 13:11:57 03/06/2022
+--------------------------------------------------------------------------------
+ Start_F5_Tax-Summary: 13:11:57 03/06/2022
+  Tax Summary for OTU:
+   Chordata_7711	977	100.0	100.0
+  Tax Summary for ZOTU:
+   Chordata_7711	517	100.0	100.0
+ End_F5_Tax-Summary: 13:11:57 03/06/2022
+--------------------------------------------------------------------------------
+ Start_F6_Chimera-Check: 13:11:57 03/06/2022
+  Additional Chimera-Check
+  Note: Although the high_confidence mode is used for chimera detection,
+        this is an extra step with a high risk of false positives.
+        There is already a sufficient built-in de novo chimera filtering
+        as part of the UPARSE or UNOISE workflow. This extra step might
+        be useful if applied with caution.
+  For details see -> e_OTU/p751_run220523_12S_(Z)OTU_chimera.txt
+................................................................................
+  Chimera-Check for OTU: 214
+  Chimera-Check for ZOTU: 7
+  Chimera-Check for ZOTU_c99: 5
+  Chimera-Check for ZOTU_c98: 4
+  Chimera-Check for ZOTU_c97: 4
+ End_F6_Chimera-Check: 13:11:59 03/06/2022
+--------------------------------------------------------------------------------
+END_Tax-Prediction: 13:11:59 03/06/2022
+================================================================================

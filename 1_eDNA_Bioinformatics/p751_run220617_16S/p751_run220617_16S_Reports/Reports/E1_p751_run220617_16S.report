@@ -1,0 +1,48 @@
+================================================================================
+Step E1 - UPARSE & UNOISE, and UNOISE with additional identity clustering
+--------------------------------------------------------------------------------
+Project: p751 / run220617 / 16S
+N(sample): 300
+N(sequences): 16385168
+Cluster choices: OTU,ZOTU,ZOTU_c99,ZOTU_c98,ZOTU_c97
+--------------------------------------------------------------------------------
+UPARSE : usearch v11.0.667_i86linux64
+Min Abundance Size: 2
+Break (Chimera-Sensitivity): -3
+................................................................................
+UNOISE3: usearch v11.0.667_i86linux64
+Min Abundance Size: 5
+Alpha (Error-Sensitivity): 3
+--------------------------------------------------------------------------------
+START_E1: 15:14:26 28/06/2022
+--------------------------------------------------------------------------------
+ ▶ Deduplicate Amplicons
+................................................................................
+  De-replicate amplicons to obtain unique amplicons.
+  Determine error rates of amplicon reads > *error.report
+  ⇨ Number of Unique Amplicons: 1067371
+--------------------------------------------------------------------------------
+▶ UPARSE - Cluster OTU (97%)
+................................................................................
+  Clusters OTU at 97% using the UPARSE-OTU algorithm.
+  ⇨ Number of OTUs: 360
+--------------------------------------------------------------------------------
+▶ UNOISE3 - Amplicon Sequence Variants
+................................................................................
+  Uses the UNOISE algorithm to perform denoising (error-correction) of
+  amplicon sequence variants (zero OTUs).
+  ⇨ Number of ZOTUs: 454
+--------------------------------------------------------------------------------
+▶ Additional Clustering
+................................................................................
+  Clusters ZOTUs at different identity levels:
+  • Sort ZOTUs by lengt
+  • Cluster ZOTU with 99% id ✔
+  ⇨ Number of ZOTUs_c99: 317
+  • Cluster ZOTU with 98% id ✔
+  ⇨ Number of ZOTUs_c98: 284
+  • Cluster ZOTU with 97% id ✔
+  ⇨ Number of ZOTUs_c97: 273
+--------------------------------------------------------------------------------
+END_E1: 15:19:02 28/06/2022
+================================================================================
